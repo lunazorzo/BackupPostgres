@@ -26,13 +26,13 @@ public class EnviaEmail {
             MultiPartEmail email = new MultiPartEmail();
             //Utilize o hostname do seu provedor de email
             System.out.println("alterando hostname...");
-            email.setHostName("smtp.nobresistemas.com");
+            email.setHostName("smtp.batata.com");
             //Quando a porta utilizada não é a padrão (gmail = 465)
             email.setSmtpPort(587);
             //Adicione os destinatários
-            email.addTo("allan@nobresistemas.com", "Jose");
+            email.addTo("allan@batata.com", "Jose");
             //Configure o seu email do qual enviará
-            email.setFrom("allan@nobresistemas.com", "Seu nome");
+            email.setFrom("allan@batata.com", "Seu nome");
             //Adicione um assunto
             email.setSubject("Test message");
             //Adicione a mensagem do email
