@@ -73,6 +73,7 @@
               <Border info="null"/>
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
+            <Property name="opaque" type="boolean" value="false"/>
           </Properties>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
@@ -119,6 +120,7 @@
             <Property name="floatable" type="boolean" value="false"/>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="enabled" type="boolean" value="false"/>
+            <Property name="opaque" type="boolean" value="false"/>
           </Properties>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
@@ -134,7 +136,7 @@
                 <Property name="text" type="java.lang.String" value="Usu&#xe1;rio"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JToolBar$Separator" name="jSeparator2">
+            <Component class="javax.swing.JToolBar$Separator" name="jSeparator1">
             </Component>
             <Component class="javax.swing.JLabel" name="Dia">
               <Properties>
@@ -147,7 +149,7 @@
                 <Property name="text" type="java.lang.String" value="Dia"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JToolBar$Separator" name="jSeparator1">
+            <Component class="javax.swing.JToolBar$Separator" name="jSeparator2">
             </Component>
             <Component class="javax.swing.JLabel" name="Hora">
               <Properties>

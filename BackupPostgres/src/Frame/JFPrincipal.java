@@ -45,9 +45,9 @@ public class JFPrincipal extends javax.swing.JFrame {
         jlDia = new javax.swing.JLabel();
         jToolBar1 = new javax.swing.JToolBar();
         Usuário = new javax.swing.JLabel();
-        jSeparator2 = new javax.swing.JToolBar.Separator();
-        Dia = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JToolBar.Separator();
+        Dia = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JToolBar.Separator();
         Hora = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -59,6 +59,7 @@ public class JFPrincipal extends javax.swing.JFrame {
 
         jSplitPane1.setBorder(null);
         jSplitPane1.setEnabled(false);
+        jSplitPane1.setOpaque(false);
 
         jlHora.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jlHora.setForeground(java.awt.Color.white);
@@ -74,18 +75,19 @@ public class JFPrincipal extends javax.swing.JFrame {
         jToolBar1.setFloatable(false);
         jToolBar1.setBorderPainted(false);
         jToolBar1.setEnabled(false);
+        jToolBar1.setOpaque(false);
 
         Usuário.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         Usuário.setForeground(java.awt.Color.white);
         Usuário.setText("Usuário");
         jToolBar1.add(Usuário);
-        jToolBar1.add(jSeparator2);
+        jToolBar1.add(jSeparator1);
 
         Dia.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         Dia.setForeground(java.awt.Color.white);
         Dia.setText("Dia");
         jToolBar1.add(Dia);
-        jToolBar1.add(jSeparator1);
+        jToolBar1.add(jSeparator2);
 
         Hora.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         Hora.setForeground(java.awt.Color.white);
@@ -144,14 +146,6 @@ public class JFPrincipal extends javax.swing.JFrame {
         String sData = dformatador.format(data);
         return sData;
     }
-
-    public String MostraHora() {
-        Date data = new Date();
-        SimpleDateFormat hformatador = new SimpleDateFormat("hh:mm");
-        String sHora = hformatador.format(data);
-        return sHora;
-    }
-
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
